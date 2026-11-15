@@ -34,7 +34,8 @@ namespace VetSafe
             btnhisclini.Click += (s, e) => Abrir(new ucHistorias(), btnhisclini);        // HISTORIAS CLINICAS
             btninventario.Click += (s, e) => Abrir(new ucInventario(), btninventario);       // INVENTARIO
             btnpagos.Click += (s, e) => Abrir(new ucPagos(), btnpagos);            // PAGOS
-            btnreportes.Click += (s, e) => Abrir(new ucReportes(), btnreportes);         // REPORTES
+            btnpersonal.Click += (s, e) => Abrir(new ucPersonal(), btnpersonal);     // PERSONAL
+            btnreportes.Click += (s, e) => Abrir(new ucReportes(), btnreportes);     // REPORTES
             button9.Click += (s, e) => this.Close();                             // SALIR
         }
 

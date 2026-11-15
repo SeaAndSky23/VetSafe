@@ -31,7 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Inicio));
             panel1 = new Panel();
             button9 = new Button();
-            btnreportes = new Button();
+            btnpersonal = new Button();
             btnpagos = new Button();
             btninventario = new Button();
             btnhisclini = new Button();
@@ -41,6 +41,7 @@
             pictureBox1 = new PictureBox();
             btninicio = new Button();
             pnlContenido = new Panel();
+            btnreportes = new Button();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
@@ -48,8 +49,9 @@
             // panel1
             // 
             panel1.BackColor = Color.FromArgb(6, 108, 129);
-            panel1.Controls.Add(button9);
             panel1.Controls.Add(btnreportes);
+            panel1.Controls.Add(button9);
+            panel1.Controls.Add(btnpersonal);
             panel1.Controls.Add(btnpagos);
             panel1.Controls.Add(btninventario);
             panel1.Controls.Add(btnhisclini);
@@ -80,20 +82,20 @@
             button9.Text = "SALIR";
             button9.UseVisualStyleBackColor = false;
             // 
-            // btnreportes
+            // btnpersonal
             // 
-            btnreportes.BackColor = Color.Transparent;
-            btnreportes.Cursor = Cursors.Hand;
-            btnreportes.FlatAppearance.BorderSize = 0;
-            btnreportes.FlatStyle = FlatStyle.Flat;
-            btnreportes.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
-            btnreportes.ForeColor = Color.White;
-            btnreportes.Location = new Point(0, 551);
-            btnreportes.Name = "btnreportes";
-            btnreportes.Size = new Size(193, 45);
-            btnreportes.TabIndex = 6;
-            btnreportes.Text = "REPORTES";
-            btnreportes.UseVisualStyleBackColor = false;
+            btnpersonal.BackColor = Color.Transparent;
+            btnpersonal.Cursor = Cursors.Hand;
+            btnpersonal.FlatAppearance.BorderSize = 0;
+            btnpersonal.FlatStyle = FlatStyle.Flat;
+            btnpersonal.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
+            btnpersonal.ForeColor = Color.White;
+            btnpersonal.Location = new Point(0, 551);
+            btnpersonal.Name = "btnpersonal";
+            btnpersonal.Size = new Size(193, 45);
+            btnpersonal.TabIndex = 6;
+            btnpersonal.Text = "PERSONAL";
+            btnpersonal.UseVisualStyleBackColor = false;
             // 
             // btnpagos
             // 
@@ -220,6 +222,21 @@
             pnlContenido.Size = new Size(754, 703);
             pnlContenido.TabIndex = 1;
             // 
+            // btnreportes
+            // 
+            btnreportes.BackColor = Color.Transparent;
+            btnreportes.Cursor = Cursors.Hand;
+            btnreportes.FlatAppearance.BorderSize = 0;
+            btnreportes.FlatStyle = FlatStyle.Flat;
+            btnreportes.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
+            btnreportes.ForeColor = Color.White;
+            btnreportes.Location = new Point(3, 602);
+            btnreportes.Name = "btnreportes";
+            btnreportes.Size = new Size(193, 45);
+            btnreportes.TabIndex = 8;
+            btnreportes.Text = "REPORTES";
+            btnreportes.UseVisualStyleBackColor = false;
+            // 
             // Inicio
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -246,10 +263,11 @@
         private Button btnmascotas;
         private Button btnclientes;
         private Button button9;
-        private Button btnreportes;
+        private Button btnpersonal;
         private Button btnpagos;
         private Button btninventario;
         private Button btnhisclini;
         private Panel pnlContenido;
+        private Button btnreportes;
     }
 }
