@@ -47,7 +47,7 @@
             panel3 = new Panel();
             label3 = new Label();
             label2 = new Label();
-            button10 = new Button();
+            btnactualizar = new Button();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panel2.SuspendLayout();
@@ -225,7 +225,7 @@
             // panel2
             // 
             panel2.BackColor = SystemColors.GradientInactiveCaption;
-            panel2.Controls.Add(button10);
+            panel2.Controls.Add(btnactualizar);
             panel2.Controls.Add(panel4);
             panel2.Controls.Add(label1);
             panel2.Controls.Add(panel3);
@@ -292,14 +292,15 @@
             label2.TabIndex = 0;
             label2.Text = "Citas de hoy";
             // 
-            // button10
+            // btnactualizar
             // 
-            button10.Location = new Point(175, 87);
-            button10.Name = "button10";
-            button10.Size = new Size(75, 23);
-            button10.TabIndex = 3;
-            button10.Text = "button10";
-            button10.UseVisualStyleBackColor = true;
+            btnactualizar.Cursor = Cursors.Hand;
+            btnactualizar.Location = new Point(34, 187);
+            btnactualizar.Name = "btnactualizar";
+            btnactualizar.Size = new Size(96, 23);
+            btnactualizar.TabIndex = 3;
+            btnactualizar.Text = "ACTUALIZAR";
+            btnactualizar.UseVisualStyleBackColor = true;
             // 
             // Inicio
             // 
@@ -344,6 +345,6 @@
         private Label label3;
         private Label label2;
         private DataGridView dataGridView1;
-        private Button button10;
+        private Button btnactualizar;
     }
 }
