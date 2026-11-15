@@ -31,44 +31,33 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Inicio));
             panel1 = new Panel();
             button9 = new Button();
-            button8 = new Button();
-            button7 = new Button();
-            button6 = new Button();
-            button5 = new Button();
-            button4 = new Button();
-            button3 = new Button();
-            button2 = new Button();
+            btnreportes = new Button();
+            btnpagos = new Button();
+            btninventario = new Button();
+            btnhisclini = new Button();
+            btncitas = new Button();
+            btnmascotas = new Button();
+            btnclientes = new Button();
             pictureBox1 = new PictureBox();
-            button1 = new Button();
-            panel2 = new Panel();
-            panel4 = new Panel();
-            dataGridView1 = new DataGridView();
-            label1 = new Label();
-            panel3 = new Panel();
-            label3 = new Label();
-            label2 = new Label();
-            btnactualizar = new Button();
+            btninicio = new Button();
+            pnlContenido = new Panel();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
-            panel2.SuspendLayout();
-            panel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
-            panel3.SuspendLayout();
             SuspendLayout();
             // 
             // panel1
             // 
             panel1.BackColor = Color.FromArgb(6, 108, 129);
             panel1.Controls.Add(button9);
-            panel1.Controls.Add(button8);
-            panel1.Controls.Add(button7);
-            panel1.Controls.Add(button6);
-            panel1.Controls.Add(button5);
-            panel1.Controls.Add(button4);
-            panel1.Controls.Add(button3);
-            panel1.Controls.Add(button2);
+            panel1.Controls.Add(btnreportes);
+            panel1.Controls.Add(btnpagos);
+            panel1.Controls.Add(btninventario);
+            panel1.Controls.Add(btnhisclini);
+            panel1.Controls.Add(btncitas);
+            panel1.Controls.Add(btnmascotas);
+            panel1.Controls.Add(btnclientes);
             panel1.Controls.Add(pictureBox1);
-            panel1.Controls.Add(button1);
+            panel1.Controls.Add(btninicio);
             panel1.Dock = DockStyle.Left;
             panel1.Location = new Point(0, 0);
             panel1.Name = "panel1";
@@ -91,110 +80,110 @@
             button9.Text = "SALIR";
             button9.UseVisualStyleBackColor = false;
             // 
-            // button8
+            // btnreportes
             // 
-            button8.BackColor = Color.Transparent;
-            button8.Cursor = Cursors.Hand;
-            button8.FlatAppearance.BorderSize = 0;
-            button8.FlatStyle = FlatStyle.Flat;
-            button8.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
-            button8.ForeColor = Color.White;
-            button8.Location = new Point(0, 551);
-            button8.Name = "button8";
-            button8.Size = new Size(193, 45);
-            button8.TabIndex = 6;
-            button8.Text = "REPORTES";
-            button8.UseVisualStyleBackColor = false;
+            btnreportes.BackColor = Color.Transparent;
+            btnreportes.Cursor = Cursors.Hand;
+            btnreportes.FlatAppearance.BorderSize = 0;
+            btnreportes.FlatStyle = FlatStyle.Flat;
+            btnreportes.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
+            btnreportes.ForeColor = Color.White;
+            btnreportes.Location = new Point(0, 551);
+            btnreportes.Name = "btnreportes";
+            btnreportes.Size = new Size(193, 45);
+            btnreportes.TabIndex = 6;
+            btnreportes.Text = "REPORTES";
+            btnreportes.UseVisualStyleBackColor = false;
             // 
-            // button7
+            // btnpagos
             // 
-            button7.BackColor = Color.Transparent;
-            button7.Cursor = Cursors.Hand;
-            button7.FlatAppearance.BorderSize = 0;
-            button7.FlatStyle = FlatStyle.Flat;
-            button7.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
-            button7.ForeColor = Color.White;
-            button7.Location = new Point(0, 491);
-            button7.Name = "button7";
-            button7.Size = new Size(193, 45);
-            button7.TabIndex = 7;
-            button7.Text = "PAGOS";
-            button7.UseVisualStyleBackColor = false;
+            btnpagos.BackColor = Color.Transparent;
+            btnpagos.Cursor = Cursors.Hand;
+            btnpagos.FlatAppearance.BorderSize = 0;
+            btnpagos.FlatStyle = FlatStyle.Flat;
+            btnpagos.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
+            btnpagos.ForeColor = Color.White;
+            btnpagos.Location = new Point(0, 491);
+            btnpagos.Name = "btnpagos";
+            btnpagos.Size = new Size(193, 45);
+            btnpagos.TabIndex = 7;
+            btnpagos.Text = "PAGOS";
+            btnpagos.UseVisualStyleBackColor = false;
             // 
-            // button6
+            // btninventario
             // 
-            button6.BackColor = Color.Transparent;
-            button6.Cursor = Cursors.Hand;
-            button6.FlatAppearance.BorderSize = 0;
-            button6.FlatStyle = FlatStyle.Flat;
-            button6.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
-            button6.ForeColor = Color.White;
-            button6.Location = new Point(2, 440);
-            button6.Name = "button6";
-            button6.Size = new Size(193, 45);
-            button6.TabIndex = 6;
-            button6.Text = "INVENTARIO";
-            button6.UseVisualStyleBackColor = false;
+            btninventario.BackColor = Color.Transparent;
+            btninventario.Cursor = Cursors.Hand;
+            btninventario.FlatAppearance.BorderSize = 0;
+            btninventario.FlatStyle = FlatStyle.Flat;
+            btninventario.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
+            btninventario.ForeColor = Color.White;
+            btninventario.Location = new Point(2, 440);
+            btninventario.Name = "btninventario";
+            btninventario.Size = new Size(193, 45);
+            btninventario.TabIndex = 6;
+            btninventario.Text = "INVENTARIO";
+            btninventario.UseVisualStyleBackColor = false;
             // 
-            // button5
+            // btnhisclini
             // 
-            button5.BackColor = Color.Transparent;
-            button5.Cursor = Cursors.Hand;
-            button5.FlatAppearance.BorderSize = 0;
-            button5.FlatStyle = FlatStyle.Flat;
-            button5.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
-            button5.ForeColor = Color.White;
-            button5.Location = new Point(0, 379);
-            button5.Name = "button5";
-            button5.Size = new Size(193, 45);
-            button5.TabIndex = 5;
-            button5.Text = "HISTORIAS CLINICAS";
-            button5.UseVisualStyleBackColor = false;
+            btnhisclini.BackColor = Color.Transparent;
+            btnhisclini.Cursor = Cursors.Hand;
+            btnhisclini.FlatAppearance.BorderSize = 0;
+            btnhisclini.FlatStyle = FlatStyle.Flat;
+            btnhisclini.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
+            btnhisclini.ForeColor = Color.White;
+            btnhisclini.Location = new Point(0, 379);
+            btnhisclini.Name = "btnhisclini";
+            btnhisclini.Size = new Size(193, 45);
+            btnhisclini.TabIndex = 5;
+            btnhisclini.Text = "HISTORIAS CLINICAS";
+            btnhisclini.UseVisualStyleBackColor = false;
             // 
-            // button4
+            // btncitas
             // 
-            button4.BackColor = Color.Transparent;
-            button4.Cursor = Cursors.Hand;
-            button4.FlatAppearance.BorderSize = 0;
-            button4.FlatStyle = FlatStyle.Flat;
-            button4.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
-            button4.ForeColor = Color.White;
-            button4.Location = new Point(0, 328);
-            button4.Name = "button4";
-            button4.Size = new Size(193, 45);
-            button4.TabIndex = 4;
-            button4.Text = "CITAS";
-            button4.UseVisualStyleBackColor = false;
+            btncitas.BackColor = Color.Transparent;
+            btncitas.Cursor = Cursors.Hand;
+            btncitas.FlatAppearance.BorderSize = 0;
+            btncitas.FlatStyle = FlatStyle.Flat;
+            btncitas.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
+            btncitas.ForeColor = Color.White;
+            btncitas.Location = new Point(0, 328);
+            btncitas.Name = "btncitas";
+            btncitas.Size = new Size(193, 45);
+            btncitas.TabIndex = 4;
+            btncitas.Text = "CITAS";
+            btncitas.UseVisualStyleBackColor = false;
             // 
-            // button3
+            // btnmascotas
             // 
-            button3.BackColor = Color.Transparent;
-            button3.Cursor = Cursors.Hand;
-            button3.FlatAppearance.BorderSize = 0;
-            button3.FlatStyle = FlatStyle.Flat;
-            button3.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
-            button3.ForeColor = Color.White;
-            button3.Location = new Point(0, 277);
-            button3.Name = "button3";
-            button3.Size = new Size(193, 45);
-            button3.TabIndex = 3;
-            button3.Text = "MASCOTAS";
-            button3.UseVisualStyleBackColor = false;
+            btnmascotas.BackColor = Color.Transparent;
+            btnmascotas.Cursor = Cursors.Hand;
+            btnmascotas.FlatAppearance.BorderSize = 0;
+            btnmascotas.FlatStyle = FlatStyle.Flat;
+            btnmascotas.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
+            btnmascotas.ForeColor = Color.White;
+            btnmascotas.Location = new Point(0, 277);
+            btnmascotas.Name = "btnmascotas";
+            btnmascotas.Size = new Size(193, 45);
+            btnmascotas.TabIndex = 3;
+            btnmascotas.Text = "MASCOTAS";
+            btnmascotas.UseVisualStyleBackColor = false;
             // 
-            // button2
+            // btnclientes
             // 
-            button2.BackColor = Color.Transparent;
-            button2.Cursor = Cursors.Hand;
-            button2.FlatAppearance.BorderSize = 0;
-            button2.FlatStyle = FlatStyle.Flat;
-            button2.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
-            button2.ForeColor = Color.White;
-            button2.Location = new Point(0, 226);
-            button2.Name = "button2";
-            button2.Size = new Size(193, 45);
-            button2.TabIndex = 2;
-            button2.Text = "CLIENTES";
-            button2.UseVisualStyleBackColor = false;
+            btnclientes.BackColor = Color.Transparent;
+            btnclientes.Cursor = Cursors.Hand;
+            btnclientes.FlatAppearance.BorderSize = 0;
+            btnclientes.FlatStyle = FlatStyle.Flat;
+            btnclientes.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
+            btnclientes.ForeColor = Color.White;
+            btnclientes.Location = new Point(0, 226);
+            btnclientes.Name = "btnclientes";
+            btnclientes.Size = new Size(193, 45);
+            btnclientes.TabIndex = 2;
+            btnclientes.Text = "CLIENTES";
+            btnclientes.UseVisualStyleBackColor = false;
             // 
             // pictureBox1
             // 
@@ -207,100 +196,29 @@
             pictureBox1.TabIndex = 1;
             pictureBox1.TabStop = false;
             // 
-            // button1
+            // btninicio
             // 
-            button1.BackColor = Color.Transparent;
-            button1.Cursor = Cursors.Hand;
-            button1.FlatAppearance.BorderSize = 0;
-            button1.FlatStyle = FlatStyle.Flat;
-            button1.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
-            button1.ForeColor = Color.White;
-            button1.Location = new Point(2, 175);
-            button1.Name = "button1";
-            button1.Size = new Size(193, 45);
-            button1.TabIndex = 0;
-            button1.Text = "INICIO";
-            button1.UseVisualStyleBackColor = false;
+            btninicio.BackColor = Color.Transparent;
+            btninicio.Cursor = Cursors.Hand;
+            btninicio.FlatAppearance.BorderSize = 0;
+            btninicio.FlatStyle = FlatStyle.Flat;
+            btninicio.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
+            btninicio.ForeColor = Color.White;
+            btninicio.Location = new Point(2, 175);
+            btninicio.Name = "btninicio";
+            btninicio.Size = new Size(193, 45);
+            btninicio.TabIndex = 0;
+            btninicio.Text = "INICIO";
+            btninicio.UseVisualStyleBackColor = false;
             // 
-            // panel2
+            // pnlContenido
             // 
-            panel2.BackColor = SystemColors.GradientInactiveCaption;
-            panel2.Controls.Add(btnactualizar);
-            panel2.Controls.Add(panel4);
-            panel2.Controls.Add(label1);
-            panel2.Controls.Add(panel3);
-            panel2.Dock = DockStyle.Right;
-            panel2.Location = new Point(199, 0);
-            panel2.Name = "panel2";
-            panel2.Size = new Size(751, 703);
-            panel2.TabIndex = 1;
-            // 
-            // panel4
-            // 
-            panel4.BackColor = Color.WhiteSmoke;
-            panel4.Controls.Add(dataGridView1);
-            panel4.Location = new Point(34, 226);
-            panel4.Name = "panel4";
-            panel4.Size = new Size(694, 443);
-            panel4.TabIndex = 2;
-            // 
-            // dataGridView1
-            // 
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(46, 65);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.Size = new Size(613, 322);
-            dataGridView1.TabIndex = 0;
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 15F, FontStyle.Bold);
-            label1.Location = new Point(12, 9);
-            label1.Name = "label1";
-            label1.Size = new Size(140, 28);
-            label1.TabIndex = 1;
-            label1.Text = "BIENVENIDO ";
-            // 
-            // panel3
-            // 
-            panel3.BackColor = Color.WhiteSmoke;
-            panel3.Controls.Add(label3);
-            panel3.Controls.Add(label2);
-            panel3.Location = new Point(296, 12);
-            panel3.Name = "panel3";
-            panel3.Size = new Size(152, 111);
-            panel3.TabIndex = 0;
-            // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.Font = new Font("Segoe UI", 20F, FontStyle.Bold);
-            label3.Location = new Point(60, 44);
-            label3.Name = "label3";
-            label3.Size = new Size(33, 37);
-            label3.TabIndex = 1;
-            label3.Text = "0";
-            // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
-            label2.Location = new Point(30, 13);
-            label2.Name = "label2";
-            label2.Size = new Size(91, 19);
-            label2.TabIndex = 0;
-            label2.Text = "Citas de hoy";
-            // 
-            // btnactualizar
-            // 
-            btnactualizar.Cursor = Cursors.Hand;
-            btnactualizar.Location = new Point(34, 187);
-            btnactualizar.Name = "btnactualizar";
-            btnactualizar.Size = new Size(96, 23);
-            btnactualizar.TabIndex = 3;
-            btnactualizar.Text = "ACTUALIZAR";
-            btnactualizar.UseVisualStyleBackColor = true;
+            pnlContenido.BackColor = SystemColors.GradientInactiveCaption;
+            pnlContenido.Dock = DockStyle.Fill;
+            pnlContenido.Location = new Point(196, 0);
+            pnlContenido.Name = "pnlContenido";
+            pnlContenido.Size = new Size(754, 703);
+            pnlContenido.TabIndex = 1;
             // 
             // Inicio
             // 
@@ -308,7 +226,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ButtonHighlight;
             ClientSize = new Size(950, 703);
-            Controls.Add(panel2);
+            Controls.Add(pnlContenido);
             Controls.Add(panel1);
             Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "Inicio";
@@ -316,35 +234,22 @@
             Text = "Inicio";
             panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
-            panel2.ResumeLayout(false);
-            panel2.PerformLayout();
-            panel4.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
-            panel3.ResumeLayout(false);
-            panel3.PerformLayout();
             ResumeLayout(false);
         }
 
         #endregion
 
         private Panel panel1;
-        private Button button1;
+        private Button btninicio;
         private PictureBox pictureBox1;
-        private Button button4;
-        private Button button3;
-        private Button button2;
+        private Button btncitas;
+        private Button btnmascotas;
+        private Button btnclientes;
         private Button button9;
-        private Button button8;
-        private Button button7;
-        private Button button6;
-        private Button button5;
-        private Panel panel2;
-        private Panel panel4;
-        private Label label1;
-        private Panel panel3;
-        private Label label3;
-        private Label label2;
-        private DataGridView dataGridView1;
-        private Button btnactualizar;
+        private Button btnreportes;
+        private Button btnpagos;
+        private Button btninventario;
+        private Button btnhisclini;
+        private Panel pnlContenido;
     }
 }

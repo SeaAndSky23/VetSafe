@@ -96,6 +96,7 @@
             // 
             txtclave.Location = new Point(26, 162);
             txtclave.Name = "txtclave";
+            txtclave.PasswordChar = '*';
             txtclave.Size = new Size(281, 23);
             txtclave.TabIndex = 5;
             // 
