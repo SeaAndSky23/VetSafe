@@ -44,6 +44,10 @@ namespace VetSafe
         {
             var g = dataGridView1;
 
+            // La grilla ocupa todo el panel (con un margen de 10 px)
+            panel4.Padding = new Padding(10);
+            g.Dock = DockStyle.Fill;
+
             g.ReadOnly = true;
             g.AllowUserToAddRows = false;
             g.AllowUserToDeleteRows = false;
@@ -51,7 +55,12 @@ namespace VetSafe
             g.RowHeadersVisible = false;
             g.MultiSelect = false;
             g.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            g.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+
+            // Las columnas se ajustan una por una al cargar los datos
+            g.ScrollBars = ScrollBars.Both;
+            g.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.None;
+            g.DefaultCellStyle.WrapMode = DataGridViewTriState.False;
+
             g.BackgroundColor = Color.White;
             g.BorderStyle = BorderStyle.None;
             g.EnableHeadersVisualStyles = false;
@@ -102,6 +111,20 @@ namespace VetSafe
 
                 if (dataGridView1.Columns.Contains("Fecha y hora"))
                     dataGridView1.Columns["Fecha y hora"].DefaultCellStyle.Format = "dd/MM/yyyy HH:mm";
+
+                // Cada columna se ajusta a su contenido (texto + encabezado)
+                foreach (DataGridViewColumn col in dataGridView1.Columns)
+                {
+                    col.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
+                    col.MinimumWidth = 70;
+                }
+
+                // "Motivo" toma el espacio que sobre
+                if (dataGridView1.Columns.Contains("Motivo"))
+                {
+                    dataGridView1.Columns["Motivo"].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+                    dataGridView1.Columns["Motivo"].MinimumWidth = 150;
+                }
             }
             catch (Exception ex)
             {
